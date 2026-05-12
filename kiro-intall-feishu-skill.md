@@ -49,9 +49,7 @@ lark-cli auth status
 
 ## 第 6 步 新增全局配置的飞书 steering
 
-工作目录切换至 ~/.kiro
-
-新增一个名为 feishu.md 的全局 steering 写入以下内容
+新增一个 ~/.kiro/steering/feishu.md 的全局 steering 写入以下内容
 
 ```
 ---
