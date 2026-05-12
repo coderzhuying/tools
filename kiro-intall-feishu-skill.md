@@ -10,12 +10,12 @@
 - Go v1.23+ 和 Python 3（仅源码构建需要）
 - 请切换到 kiro 全局配置的目录下执行
 
-## 切换目录
+## 第 1 步 切换目录
 ```
 cd ~/.kiro
 ```
 
-## 第 1 步 安装
+## 第 2 步 安装
 
 ```shell
 # 安装 CLI
@@ -25,7 +25,7 @@ npm install -g @larksuite/cli
 npx -y skills add https://open.feishu.cn --skill -y
 ``` 
 
-## 第 2 步 配置应用凭证
+## 第 3 步 配置应用凭证
 
 Agent 运行以下命令，并让用户协助完成授权。
 
@@ -33,7 +33,7 @@ Agent 运行以下命令，并让用户协助完成授权。
 lark-cli config init
 ```
 
-## 第 3 步 登录
+## 第 4 步 登录
 
 Agent 运行以下命令，并提取授权链接发给用户。
 
@@ -41,13 +41,15 @@ Agent 运行以下命令，并提取授权链接发给用户。
 lark-cli auth login
 ```
 
-## 第 4 步 验证
+## 第 5 步 验证
 
 ```shell
 lark-cli auth status
 ```
 
-## 第 5 步 新增
+## 第 6 步 新增全局配置的飞书 steering
+
+工作目录切换至 ~/.kiro
 
 新增一个名为 feishu.md 的全局 steering 写入以下内容
 
