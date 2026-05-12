@@ -9,22 +9,17 @@
 - Node.js（npm/npx）
 - Go v1.23+ 和 Python 3（仅源码构建需要）
 
-## 第 1 步 切换目录
-```
-cd ~
-```
-
-## 第 2 步 安装
+## 第 1 步 安装
 
 ```shell
 # 安装 CLI
 npm install -g @larksuite/cli
 
 # 安装 CLI SKILL（必需）
-npx -y skills add https://open.feishu.cn --skill -y
+npx skills add larksuite/cli -y -g
 ``` 
 
-## 第 3 步 配置应用凭证
+## 第 2 步 配置应用凭证
 
 Agent 运行以下命令，并让用户协助完成授权。
 
@@ -32,7 +27,7 @@ Agent 运行以下命令，并让用户协助完成授权。
 lark-cli config init
 ```
 
-## 第 4 步 登录
+## 第 3 步 登录
 
 Agent 运行以下命令，并提取授权链接发给用户。
 
@@ -40,13 +35,13 @@ Agent 运行以下命令，并提取授权链接发给用户。
 lark-cli auth login
 ```
 
-## 第 5 步 验证
+## 第 4 步 验证
 
 ```shell
 lark-cli auth status
 ```
 
-## 第 6 步 新增全局配置的飞书 steering
+## 第 5 步 新增全局配置的飞书 steering
 
 新增一个 ~/.kiro/steering/feishu.md 的全局 steering 写入以下内容
 
